@@ -1,0 +1,43 @@
+<view class="swiper-container">
+  <swiper autoplay="{{autoplay}}" interval="5000" duration="500" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper" bindtap='clickSwiper'>
+    <block wx:for="{{slider}}" wx:key="unique">
+      <swiper-item>
+        <video id="myVideo" src="{{item.picUrl}}" wx:if="{{item.type==1}}" class="bcg" controls="true" poster='../images/home.png'></video>
+        <image src="{{item.picUrl}}" wx:if="{{item.type==0}}" class="img" data-index="{{index}}"></image>
+       
+      </swiper-item>
+
+    </block>
+  </swiper>
+  <view class="num">
+    <text>{{idx}}/{{numMax}}</text>
+  </view>
+</view>
+
+<view class='new-product'>
+  <view class='title-bar' bindtap='torday'>
+    <view class='iconfont icon-jingpintuijian'></view>
+    <text>精品推荐</text>
+    <navigator hover-class="none" class='flex'>
+      <text>更多推荐</text>
+      <text class='iconfont icon-xiala'></text>
+    </navigator>
+  </view>
+  <view class='scroll-product'>
+    <scroll-view class="scroll-view_x" scroll-x style="width: auto;overflow:hidden;">
+      <block wx:for="{{recommendList}}" wx:key=''>
+        <view class='item'>
+          <navigator hover-class="none" url="/pages/product-con/index?id={{item.id}}">
+            <view class='img-box'>
+              <image src='{{url}}{{item.image}}'></image>
+            </view>
+            <view class='pro-info'>
+              <view class='pro-title'>{{item.store_name}}</view>
+              <view class='price-small'>￥{{item.price}}</view>
+            </view>
+          </navigator>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,65 @@
+.childDiv {
+  width: 95%;
+  height: 40px;
+  line-height: 2.5;
+  margin-left: 5%;
+}
+
+.spanText {
+  width: 22%;
+  height: 40px;
+  font-size: 16px;
+  color: #444343;
+  font-weight: normal;
+  float: left;
+}
+
+.identifyImg {
+  width: 70%;
+  display: inline-table;
+}
+
+.chooseView {
+  width: 180px;
+  height: 110px;
+  border: 2px dashed #ccc;
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.addImg {
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.chooseImgText {
+  font-size: 16px;
+}
+
+.showView {
+  width: 180px;
+  height: 110px;
+  border: 0px dashed #ccc;
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.showImg {
+  width: 100%;
+  height: 100%;
+}
+
+.deleteBtn {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: -5px;
+  left: 88%;
+}

@@ -1,0 +1,45 @@
+<!-- 网络连接失败，重新加载div -->
+<view wx:if="{{errorPageFlag==1}}" id="errorPage" class="errorPage">
+  <view class="signalImg">
+    <image src="../../images/signal.jpg" style="width:100%;height:100%;"></image>
+  </view>
+  <view class="tipWords">当前网络信号较弱，请您检查网络是否连接或稍后重新加载。</view>
+  <view id="reloadPage" class="reloadPage" catchtap='reloadFunc'>重新加载</view>
+</view>
+<view style='overflow-y:scroll;width:100%'>
+  <view>
+    <button class="funcBtn" bindtap="EchartsDemo">
+      <image src="/pages/images/fsux.png" class="iconStyle"></image>
+      <view class="wordsStyle">Echarts动态数据渲染</view>
+      <image src="/pages/images/more.png" class="rightImg"></image>
+    </button>
+    <button class="funcBtn" catchtap='uploadPic' id="">
+
+      <image src="/pages/images/uppic.png" class="iconStyle"></image>
+      <view class="wordsStyle">上传图片</view>
+      <image src="/pages/images/more.png" class="rightImg"></image>
+    </button>
+  </view>
+
+  <button class="funcBtn" bindtap="swiperDemo">
+    <image src="/pages/images/slide.png" class="iconStyle"></image>
+    <view class="wordsStyle">Swiper轮播组件</view>
+    <image src="/pages/images/more.png" class="rightImg"></image>
+  </button>
+  <button class="funcBtn" bindtap='orderDemo' id="mycommentView">
+
+    <image src="/pages/images/order.png" class="iconStyle"></image>
+    <view class="wordsStyle">点餐模拟</view>
+    <image src="/pages/images/more.png" class="rightImg"></image>
+  </button>
+  <button class="funcBtn" bindtap='logisiticsGZFn' id="mycommentView">
+    <image src="/pages/images/wlgz.png" class="iconStyle"></image>
+    <view class="wordsStyle">物流跟踪</view>
+    <image src="/pages/images/more.png" class="rightImg"></image>
+  </button>
+  <navigator url='/pages/myself/myself' style="width:auto;" class="funcBtn">
+    <image src="/pages/images/ddan.png" class="iconStyle"></image>
+    <view class="wordsStyle">全部订单Tab事件</view>
+    <image src="/pages/images/more.png" class="rightImg"></image>
+  </navigator> 
+</view>

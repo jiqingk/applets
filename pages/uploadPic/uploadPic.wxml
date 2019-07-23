@@ -1,0 +1,15 @@
+<view class='childDiv' style='display:inline-table'>
+      <label class="spanText" for="newCode" style='width:28%'>
+       上传照片</label>
+      <view class='identifyImg'>
+        <view wx:if="{{isChoose==0}}" class='chooseView' bindtap='choose'>
+          <image class="addImg" src='/pages/images/add.png'></image>
+          <text>\n</text>
+          <text class='chooseImgText'>上传图片</text>
+        </view>
+        <view wx:elif="{{isChoose==1}}" class='showView' bindtap='previewImage'>
+          <image class="showImg" src='{{pictures[0]}}'></image>
+          <image class='deleteBtn' src='/pages/images/deleteValue.png' catchtap='deleteImgFunc'></image>
+        </view>
+      </view>
+    </view>

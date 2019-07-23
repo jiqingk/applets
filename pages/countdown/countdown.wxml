@@ -1,0 +1,18 @@
+<!-- 
+<!-- 如果是待付款状态则会显示倒计时 
+
+<view wx:for="{{dataSourcesArray}}" wx:for-item="item" wx:key="key">
+
+    <view wx:if="{{item.state == '待付款'}}" class="showTime">
+
+        <text class="title">剩余支付时间</text>
+
+        <text class="content">{{item["showTime"]}}</text>
+
+    </view>
+
+</view> -->
+<view class="container">
+<text >秒杀: {{clock}}</text>
+<text>{{micro_second}}</text>
+</view>

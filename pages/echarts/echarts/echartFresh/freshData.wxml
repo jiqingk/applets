@@ -1,0 +1,43 @@
+<view class="divTop">
+	<text class="titleSpan">残疾人信息登记进度统计(单位:人数)</text>
+	<text class="area" id="areaName">回民区</text>
+</view>
+<view class="pie">
+  <ec-canvas id="mychart-one" canvas-id="mychart-one" ec="{{ ec }}" bind:init="echartInit"></ec-canvas>
+</view>
+
+<view class="divTop" style="border-top:1px solid #eeeeee;">
+	<text class="smallTitle">其中:未调查人数细分为</text>
+	(未填表:<text id="noCollect">37</text>;待注销:<text id="dieP">0</text>)
+</view>
+<view class="divTop">
+	<text class="smallTitle">其中:已调查人数细分为</text>
+</view>
+<view class="pie2">
+  <ec-canvas id="mychart-two" canvas-id="mychart-two" ec="{{ ec1 }}" bind:init="echartInit"></ec-canvas>
+</view>
+<!--夏季地区残疾人信息登记进度统计-->
+<view class="divTop">
+	<text class="titleSpan">下级地区残疾人信息登记进度统计(单位:人数)</text>
+</view>
+<view class="pro_box">
+    <text class="pro_tit">新华西路办事处</text>
+    <progress percent="20" show-info border-radius='4' stroke-width="16"/>
+</view>
+<view class="pro_box">
+    <text class="pro_tit">新华西路办事处</text>
+    <progress percent="20" show-info border-radius='4' stroke-width="12"/>
+</view>
+<view class="pro_box">
+    <text class="pro_tit">新华西路办事处</text>
+    <progress percent="20" show-info border-radius='4' stroke-width="12"/>
+</view>
+<view class="pro_box">
+    <text class="pro_tit">新华西路办事处</text>
+    <progress percent="20" show-info border-radius='4' stroke-width="12"/>
+</view>
+<!-- <progress percent="20" show-info />
+<progress percent="40" stroke-width="12" show-info/>
+<progress percent="60" color="pink" />
+<progress percent="80" active show-info/> -->
+<button bindtap='aa'>点击事件</button>

@@ -1,0 +1,27 @@
+<view class='page_row top'>
+  <image class="goods" src='../images/sf.jpg'></image>
+  <view class='page_clu logistics'>
+    <text>物流公司: 顺丰速运{{wuliuType}}</text>
+    <text>物流单号:221009887344 {{wl_dh}}</text>
+    <text>官方电话:95338 {{wl_phone}}</text>
+  </view>
+</view>
+<view class='br'></view>
+<view class="middle">
+  <view class="top_sh" hidden="true">
+    <view class='top_icon'></view>
+    <text class="address">[收货地址]{{userAddress}}</text>
+    <view class='on' style="border-left:1px dashed #d0d0d0;"></view>
+  </view>
+  <block wx:for="{{Traces}}" wx:key="index" hidden="{{isShowWl}}">
+    <view class='order'>
+      <text class="time">{{item.time}}</text>
+      <view class='icon {{0==index?"in":"no_in"}}'></view>
+      <view class='logistics_centent page_clu'>
+        <text> {{item.context}}</text>
+      </view>
+      <view wx:if="{{index==Traces.length-1}}"></view>
+      <view wx:else class='on'></view>
+    </view>
+  </block>
+</view>
