@@ -42,4 +42,9 @@
     <view class="wordsStyle">全部订单Tab事件</view>
     <image src="/pages/images/more.png" class="rightImg"></image>
   </navigator> 
+  <navigator url='/pages/fileView/fileView' style="width:auto;" class="funcBtn">
+    <image src="/pages/images/ddan.png" class="iconStyle"></image>
+    <view class="wordsStyle">文件预览</view>
+    <image src="/pages/images/more.png" class="rightImg"></image>
+  </navigator> 
 </view>

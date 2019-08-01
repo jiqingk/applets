@@ -1,4 +1,8 @@
+var path=[];
 Page({
+  onLoad:function(){
+    
+  },
   //Echart图表案例
   EchartsDemo:function(e){
     wx.navigateTo({

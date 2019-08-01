@@ -1,5 +1,6 @@
 {
   "pages": [
+
     "pages/home/home",
     "pages/sort/sort",
     "pages/sort2/sort2",
@@ -8,8 +9,10 @@
     "pages/swiper/swiper",
     "pages/countdown/countdown",
     "pages/uploadPic/uploadPic",
+        "pages/weChat/weChat",
     "pages/echarts/echarts/echartFresh/freshData",    
     "pages/index/index",
+    "pages/fileView/fileView",
 
 
 
